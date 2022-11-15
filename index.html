@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dedi Setiawan - Portofolio</title>
+    <title>Dedi Setiawan - Personal Portofolio Website</title>
+    <link rel="icon" href="images/ds-logo.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a25a9475bf.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <div id="header">
+        <nav>
+            <img src="images/ds-logo.png" class="logo" id="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
         <div class="container">
-            <nav>
-                <img src="images/Dedi_dark.gif" class="logo">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portofolio</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+            <i class="fa-solid fa-moon" id="mode"></i>
             <div class="header-text">
                 <p>Fullstack Developer</p>
                 <h1>Hi, I'am <span>Dedi</span><br>Setiawan from Indonesia</h1>
@@ -33,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/background.jpeg" alt="dedi">
+                    <img src="images/profile.jpeg" alt="dedi">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -47,20 +50,20 @@
                     </div>
                     <div class="tabs-content active-tab" id="skills">
                         <ul>
-                            <li><span>Web Development</span><br/>Web App Development</li>
-                            <li><span>App Development</span><br/>Building Android/iOS apps</li>
+                            <li><span>Web Development</span><br />Web App Development</li>
+                            <li><span>App Development</span><br />Building Android/iOS apps</li>
                         </ul>
                     </div>
                     <div class="tabs-content" id="experience">
                         <ul>
-                            <li><span>2019-2021</span><br/>Teacher</li>
-                            <li><span>2022-present</span><br/>Frontend Developer at Wide Technologies Indonesia</li>
+                            <li><span>2019-2021</span><br />Teacher</li>
+                            <li><span>2022-present</span><br />Frontend Developer at Wide Technologies Indonesia</li>
                         </ul>
                     </div>
                     <div class="tabs-content" id="education">
                         <ul>
-                            <li><span>2013-2017</span><br/>Computer Sains - Quran Science University</li>
-                            <li><span>2021</span><br/>Javascript Fullstack Bootcamp - Hactiv8 Indonesia</li>
+                            <li><span>2013-2017</span><br />Computer Sains - Quran Science University</li>
+                            <li><span>2021</span><br />Javascript Fullstack Bootcamp - Hactiv8 Indonesia</li>
                         </ul>
                     </div>
                 </div>
@@ -75,20 +78,18 @@
                 <div>
                     <i class="fa-solid fa-globe"></i>
                     <h2>Web Development</h2>
-                    <p>Build, Develop and Deploy Project Web using React, Vue, Angular, Laravel, Flutter or Java Spring Boot</p>
-                    <a href="">Detail</a>
+                    <p>Build, Develop and Deploy Project Web using React, Vue, Angular, Laravel, Flutter or Java Spring
+                        Boot</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-mobile"></i>
                     <h2>App Development</h2>
                     <p>Build, Develop and Deploy Project Mobile App using React Native or Flutter</p>
-                    <a href="">Detail</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-server"></i>
                     <h2>Backend Development</h2>
                     <p>Build Rest Api, Microservices Using Java Spring Boot, Laravel, Golang, Python or Node js</p>
-                    <a href="">Detail</a>
                 </div>
             </div>
         </div>
@@ -98,7 +99,8 @@
             <h1 class="sub-title">My Project</h1>
             <div class="project-list">
                 <div class="project">
-                    <img src="https://ik.imagekit.io/dedis/thumbnail_tsel_ui.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667922902602" alt="">
+                    <img src="https://ik.imagekit.io/dedis/thumbnail_tsel_ui.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667922902602"
+                        alt="">
                     <div class="layer">
                         <h3>MyTsel Flutter UI</h3>
                         <p>Slicing From UI/UX Design, created By Muhammad Husain</p>
@@ -106,7 +108,8 @@
                     </div>
                 </div>
                 <div class="project">
-                    <img src="https://ik.imagekit.io/dedis/thumnail_w3?ik-sdk-version=javascript-1.4.3&updatedAt=1668395164225" alt="">
+                    <img src="https://ik.imagekit.io/dedis/thumnail_w3?ik-sdk-version=javascript-1.4.3&updatedAt=1668395164225"
+                        alt="">
                     <div class="layer">
                         <h3>Dedypt Crypto</h3>
                         <p>Create Transaction Crypto Using React Typescript, Solidity, Smart Contract and Tailwind </p>
@@ -114,7 +117,8 @@
                     </div>
                 </div>
                 <div class="project">
-                    <img src="https://ik.imagekit.io/dedis/tsel_clone_flutter_ui?ik-sdk-version=javascript-1.4.3&updatedAt=1667922745475" alt="">
+                    <img src="https://ik.imagekit.io/dedis/tsel_clone_flutter_ui?ik-sdk-version=javascript-1.4.3&updatedAt=1667922745475"
+                        alt="">
                     <div class="layer">
                         <h3>Fullstack Dahuna E-Wallet </h3>
                         <p>Create Mobile App E-Wallet Using Flutter as Frontend and Laravel as Backend</p>
@@ -133,15 +137,18 @@
                     <p><i class="fa-solid fa-envelope"></i>dssetiawa05@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+62 815 7527 1662</p>
                     <div class="social-icons">
-                        <a href="https://web.facebook.com/shuffle.ddie" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://web.facebook.com/shuffle.ddie" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a>
                         <a href="https://www.instagram.com/ddisetia1/"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/dedi-setiawan-05/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/dedi-setiawan-05/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://twitter.com/dssetiawan05"><i class="fa-brands fa-square-twitter"></i></a>
                     </div>
                     <a href="./Dedi Setiawan CV Linkedin.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form action="">
+                    <span id="msg"></span>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="your name" required />
                         <input type="email" name="email" placeholder="your email" required />
                         <textarea name="message" rows="6" placeholder="your message"></textarea>
@@ -159,15 +166,69 @@
     var tabLinks = document.getElementsByClassName("tab-links");
     var tabContent = document.getElementsByClassName("tabs-content");
 
-    function openTab(tabName){
-        for(tab of tabLinks){
+    function openTab(tabName) {
+        for (tab of tabLinks) {
             tab.classList.remove("active-link")
         }
-        for(content of tabContent){
+        for (content of tabContent) {
             content.classList.remove("active-tab")
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openMenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby52gD2wFNQAl6_K5pnTUN-WrlhtqU4IK82oAKnDvmkvzqeirH2ryJAWZBJzzV3UVSl1Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg');
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.style.background = '#B6E2A1'
+                msg.style.display = 'block';
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function () {
+                    msg.style.display = 'none';
+                    msg.innerHTML = "";
+                }, 5000)
+                form.reset();
+            })
+            .catch(error => {
+                msg.style.background = '#DC3535'
+                msg.style.display = 'block';
+                msg.innerHTML = "Message Failed Sending"
+                setTimeout(function () {
+                    msg.style.display = 'none';
+                    msg.innerHTML = "";
+                }, 5000)
+            })
+    })
+</script>
+
+<script>
+    var mode = document.getElementById('mode');
+    var logo = document.getElementById('logo');
+    mode.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+        if(document.body.classList.contains("dark-mode")){
+            logo.src = "images/ds-logo-light.png"
+            mode.className = "fa-solid fa-sun";
+        }else{
+            logo.src = "images/ds-logo.png"
+            mode.className = "fa-solid fa-moon"
+        }
     }
 </script>
 
